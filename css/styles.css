@@ -1,0 +1,123 @@
+/*
+ * Generic styles for geotweet app
+ */
+
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 120%;
+    margin: .5em 0;
+    padding: 0 10px;
+    color: #a00;
+    text-shadow: 1px 1px 0 #f99;
+}
+p {
+    padding: 0 10px;
+    margin: 1em 0;
+}
+
+blockquote {
+    margin: 10px 10px 10px 4em;
+    padding: 1em;
+    border: 1px dotted #ccc;
+    box-shadow: 1px 1px 2px 1px #aaa;
+}
+blockquote:before {
+    display: block;
+    height: 0;
+    margin-left: -.95em; 
+    font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+    color: #999;
+    content: "“";
+}
+
+
+/* Links */
+
+li.more, a {
+    color: #f99;
+    text-decoration: underline;
+    cursor: pointer;
+}
+li.more:hover, a:hover {
+    color: #f00 !important;
+}
+li:hover a.retweet, section:hover #toggle-map {
+    color: #f33;
+}
+
+
+/* Layout */
+
+#container {
+    min-width: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 1em;
+    border: 1px solid #c88;
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px 1px #a88;
+}
+#section-confirmation {
+    border-radius: 1em 1em 0 0;
+}
+
+
+/* Google map */
+
+#map {
+    height: 400px;
+    border-top: 1px solid #c88;
+}
+#toggle-map {
+    cursor: pointer;
+    float: right;
+    padding: 10px; /* make it easier to click on tablets */
+    display: block;
+}
+
+/* Tweets */
+
+#login, #logout {
+    float: right;
+    margin-right: 10px; 
+}
+#logout{
+    display: none;
+}
+
+a.retweet {
+    display: inline-block;
+    padding: .5em 0; /* make it easier to click on tablets */
+}
+#retweet-box {
+    position: absolute;
+    background: #fff;
+    padding: 1em;
+    border: 1px solid #888;
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px 1px #444;
+}
+#retweet-box a.close {
+    float: right;
+    margin: -.5em -.5em 0 .5em;
+    padding: .5em; /* make it easier to click on tablets */
+}
+
+#section-tweets ul {
+    list-style: none;
+    padding: 0 10px;
+    margin: 1em 0;
+}
+#section-tweets img {
+    vertical-align: middle;
+    padding-right: 5px;
+    height: 24px;
+}

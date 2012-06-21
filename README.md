@@ -1,5 +1,5 @@
 COMPATIBILITATE (browsere)
-===============
+==========================
 
 Firefox, Opera, IE, Safari, Chrome (Windows 7)
 Android 3 Chrome (Asus Eee Pad)
